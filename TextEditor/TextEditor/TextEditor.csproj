@@ -1,0 +1,99 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net8.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="image\add.png" />
+    <None Remove="image\alighBoth.png" />
+    <None Remove="image\alignLeft.png" />
+    <None Remove="image\alignRight.png" />
+    <None Remove="image\bold.png" />
+    <None Remove="image\bulletList.png" />
+    <None Remove="image\close.png" />
+    <None Remove="image\color.png" />
+    <None Remove="image\copy.png" />
+    <None Remove="image\cut.png" />
+    <None Remove="image\downArrow.png" />
+    <None Remove="image\iconInfo.png" />
+    <None Remove="image\iconWord.png" />
+    <None Remove="image\insert\applicationAccess.png" />
+    <None Remove="image\insert\image.png" />
+    <None Remove="image\insert\lineChart.png" />
+    <None Remove="image\insert\rectanle.png" />
+    <None Remove="image\insert\table.png" />
+    <None Remove="image\italic.png" />
+    <None Remove="image\open.png" />
+    <None Remove="image\paste.png" />
+    <None Remove="image\print.png" />
+    <None Remove="image\property.png" />
+    <None Remove="image\redo.png" />
+    <None Remove="image\save.png" />
+    <None Remove="image\saveAll.png" />
+    <None Remove="image\underline.png" />
+    <None Remove="image\undo.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="image\add.png" />
+    <Resource Include="image\align\alighBoth.png" />
+    <Resource Include="image\align\alignLeft.png" />
+    <Resource Include="image\align\alignRight.png" />
+    <Resource Include="image\close.png" />
+    <Resource Include="image\downArrow.png" />
+    <Resource Include="image\fonts\bold.png" />
+    <Resource Include="image\align\bulletList.png" />
+    <Resource Include="image\fonts\color.png" />
+    <Resource Include="image\copy.png" />
+    <Resource Include="image\cut.png" />
+    <Resource Include="image\fonts\italic.png" />
+    <Resource Include="image\iconInfo.png" />
+    <Resource Include="image\iconWord.png" />
+    <Resource Include="image\insert\applicationAccess.png" />
+    <Resource Include="image\insert\image.png" />
+    <Resource Include="image\insert\lineChart.png" />
+    <Resource Include="image\insert\rectanle.png" />
+    <Resource Include="image\insert\table.png" />
+    <Resource Include="image\open.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="image\paste.png" />
+    <Resource Include="image\print.png" />
+    <Resource Include="image\property.png" />
+    <Resource Include="image\redo.png" />
+    <Resource Include="image\save.png" />
+    <Resource Include="image\saveAll.png" />
+    <Resource Include="image\fonts\underline.png" />
+    <Resource Include="image\undo.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Update="Properties\Resources.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Update="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Resources\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="LiveCharts.Wpf" Version="0.9.7" />
+  </ItemGroup>
+
+</Project>
